@@ -1,0 +1,28 @@
+---
+name: Bug Report
+description: 디자인/기능/사용성에서 발견된 버그 등록하기
+title: "[Bug]: "
+labels: ["bug"]
+body:
+  - type: textarea
+    id: what-happened
+    attributes:
+      label: 내용
+      description: 재현조건, URL, 스크린샷 등을 첨부해주세요. 
+      placeholder: Tell us what you see!
+  - type: dropdown
+    id: priority
+    attributes:
+      label: Priority
+      options:
+        - high
+        - medium
+        - low
+  - type: input
+      id: duedate
+      attributes: 
+        label: Due Date
+        placeholder: ex. 2020.10.10
+      validations:
+        required: false
+...
